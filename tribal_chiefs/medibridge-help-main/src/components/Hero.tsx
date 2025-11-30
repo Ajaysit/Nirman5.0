@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/healthcare-hero.jpg";
+import AIAgent from "./AIAgent";
 
 const Hero = () => {
   return (
@@ -57,6 +58,7 @@ const Hero = () => {
                 500K+
               </div>
               <div className="text-primary-foreground/90">Patients Served</div>
+              <AIAgent />
             </div>
           </div>
         </div>

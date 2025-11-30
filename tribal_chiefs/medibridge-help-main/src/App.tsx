@@ -13,9 +13,9 @@ import Appointments from "./pages/Appointments";
 import Pharmacies from "./pages/Pharmacies";
 import Hospitals from "./pages/Hospitals";
 import Emergency from "./pages/Emergency";
-import Chat from "./pages/Chat";
 import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
+import AIAgent from "./components/AIAgent";
 
 import supabase from "./utils/supabase";
 
@@ -68,19 +68,19 @@ const App = () => {
             />
             <Route
               path="/pharmacies"
-              element={session ? <Pharmacies /> : <Navigate to="/auth" />}
+              element={<Pharmacies />}
             />
             <Route
               path="/hospitals"
-              element={session ? <Hospitals /> : <Navigate to="/auth" />}
+              element={<Hospitals />}
             />
             <Route
               path="/emergency"
-              element={session ? <Emergency /> : <Navigate to="/auth" />}
+              element={<Emergency />}
             />
             <Route
               path="/chat"
-              element={session ? <Chat /> : <Navigate to="/auth" />}
+              element={session ? <AIAgent /> : <Navigate to="/auth" />}
             />
             <Route
               path="/get-started"

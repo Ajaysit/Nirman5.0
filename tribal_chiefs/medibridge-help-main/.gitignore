@@ -24,9 +24,3 @@ dist-ssr
 *.sw?
 #environment
 .env
-#pages
-./pages/Profile.tsx
-./pages/Auth.tsx
-./pages/Chat.tsx
-#components
-./components/AIAgent.tsx
